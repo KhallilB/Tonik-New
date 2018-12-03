@@ -4,7 +4,7 @@ import "./Landing.css";
 class Landing extends Component {
   render() {
     return (
-      <div>
+      <div className="welcome">
         <h1>Welcome To Tonik!</h1>
       </div>
     );
