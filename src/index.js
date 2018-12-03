@@ -1,23 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import Landing from "./components/landing/Landing";
-import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
-class App extends React.Component {
-  state = {};
-  render() {
-    return (
-      <div className="background">
-        <div className="navbar">
-          <Navbar />
-        </div>
-        <Landing />
-      </div>
-    );
-  }
-}
+import App from "./components/App/App";
+//Routes
 
-export default App;
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
