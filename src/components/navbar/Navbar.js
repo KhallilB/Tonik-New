@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-import { logo } from "../../assets/new-BrandLogo.ico";
+import logo from "../../assets/new-BrandLogo.jpg";
 
 class Navbar extends Component {
   render() {
@@ -63,7 +63,19 @@ class Navbar extends Component {
               </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0" style={{ float: "right" }}>
+            <div style={{ float: "left", marginRight: "40px" }}>
+              <input
+                style={{ height: "45", marginTop: "14px" }}
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search Tonik"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </div>
             <a href="#">
               <button
                 class="btn btn-primary gradient my-2 my-sm-0"
